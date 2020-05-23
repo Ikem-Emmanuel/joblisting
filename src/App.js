@@ -52,7 +52,7 @@ function App() {
 			/>
 			<div className='container mx-auto'>
 				{jobs.length === 0 ? (
-					<h1 className='text-4xl text-gray-800'>Loading...</h1>
+					<h1 className='text-4xl text-center items-center text-gray-800'>Loading...</h1>
 				) : (
 					filteredJobs.map((job, index) => (
 						<Jobboard key={index} job={job} handleTagClick={handleTagClick} />
